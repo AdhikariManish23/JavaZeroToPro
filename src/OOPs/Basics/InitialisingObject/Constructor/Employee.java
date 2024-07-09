@@ -1,4 +1,7 @@
-package OOPs.Constructor;
+package OOPs.Basics.InitialisingObject.Constructor;
+
+// Constructor Example :
+
 
 public class Employee {
     String name;
@@ -20,11 +23,13 @@ public class Employee {
         Employee E1 = new Employee("manish",11);
         Employee E2 = new Employee("ramesh",12);
         Employee E3 = new Employee("kamlesh",13);
-//      default
-        Employee E4 = new Employee();
+
         System.out.println(E1.name+" "+E1.emp_id);
         System.out.println(E2.name+" "+E2.emp_id);
         System.out.println(E3.name+" "+E3.emp_id);
+
+    //  Default
+        Employee E4 = new Employee();
         System.out.println(E4.name+" "+E4.emp_id);
 
     }

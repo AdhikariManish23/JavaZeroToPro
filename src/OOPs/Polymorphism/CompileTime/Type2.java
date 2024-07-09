@@ -2,7 +2,8 @@ package OOPs.Polymorphism.CompileTime;
 
 // Sequence of Argument
 
-public class Case2 {
+public class Type2 {
+
     void display(String a , int b){
         System.out.println("Hello");
     }
@@ -11,7 +12,7 @@ public class Case2 {
     }
 
     public static void main(String[] args) {
-        Case2 cs2 = new Case2();
+        Type2 cs2 = new Type2();
         cs2.display("d",1);
         cs2.display(1,"f");
     }
