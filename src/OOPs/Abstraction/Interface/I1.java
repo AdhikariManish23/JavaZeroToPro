@@ -25,8 +25,8 @@ interface I2{
     void display();
 }
 
-// Multiple Inheritence Use
 
+// Multiple Inheritence Use
 
 class gas implements I1,I2
 {
