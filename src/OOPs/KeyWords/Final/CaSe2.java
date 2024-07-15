@@ -2,7 +2,7 @@ package OOPs.KeyWords.Final;
 
 public class CaSe2 {
 
-    // if we use final key word in the Method we are not able to extend this method   And Same goes With Class
+    // if we use final key word in the Method we are not able to extend this method  And Same goes With Class
 
     void m1(){
         System.out.println("Namaste");
