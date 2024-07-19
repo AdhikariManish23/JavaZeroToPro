@@ -1,7 +1,7 @@
 package OOPs.KeyWords.StaticKeyword;
 
 public class CountDemo {
-    //    int count = 0; if you used this it will give you 1 1 1 as a output
+//        int count = 0; //if you used this it will give you 1 1 1 as a output
     static int count = 0;
     CountDemo(){
         count++;
