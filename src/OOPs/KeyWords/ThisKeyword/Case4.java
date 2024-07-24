@@ -7,7 +7,7 @@ public class Case4 {
         System.out.println("Jai Mata Dii");
     }
     void m2(){
-        m1(this);   // here thsi point out the above method
+        m1(this);   // here this point out the above method
     }
 
     public static void main(String[] args) {
