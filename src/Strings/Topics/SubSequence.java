@@ -11,6 +11,6 @@ public class SubSequence {
         // Sub String
         System.out.println(s.substring(3)); // s is demo   return in  string
 
-        System.out.println(s.substring(5,11)); // s is dem
+        System.out.println(s.substring(8,11)); // s is dem
     }
 }
