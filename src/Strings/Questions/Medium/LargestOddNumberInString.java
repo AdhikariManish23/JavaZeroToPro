@@ -1,5 +1,8 @@
 package Strings.Questions.Medium;
 
+//  Input = "52" , "4268" , "35673"
+//  Output = "5" , "" , "35673"
+
 public class LargestOddNumberInString {
     public String solution(String s) {
 
