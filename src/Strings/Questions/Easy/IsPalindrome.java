@@ -6,7 +6,7 @@ package Strings.Questions.Easy;
 
 public class IsPalindrome {
     public static void main(String[] args) {
-        String s = "abcdcba";
+        String s = "abcba";
         String m = "";
 
         for(int i = s.length()-1; i>=0; i--){

@@ -33,6 +33,7 @@ public class CountSubstring {
 
     public static void main(String[] args) {
         String str = "abcba";
+//        System.out.println(str);
 
         CountSubstring cs = new CountSubstring();
         cs.substring(str);
