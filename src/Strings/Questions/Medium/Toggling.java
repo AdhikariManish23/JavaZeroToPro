@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Toggling {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);     // AdhIkaRi
-
+        System.out.println("Enter the String :");
         StringBuilder str = new StringBuilder(sc.nextLine());
 
 //      METHOD 1:

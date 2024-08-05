@@ -6,21 +6,24 @@ import java.util.*;
 public class MaximumOccurrence {
 
     public static void main(String[] args) {
-        String s = "Manish adhikari";
+        String s = "anish adhikari";
 
         int[] arr = new int[127];
 
         for (int i = 0; i < s.length(); i++) {
             arr[s.charAt(i)] = arr[s.charAt(i)] + 1;
+    //              arr[97] = 0 + 1                       ASCII value of 'a' = 97
+    //              arr[97] = 3
         }
+    //  After the above loop traversing arr[0,0,0,0,...,3,1,2,3,...,0,0,0]
 
         int max = -1;
 
         // Find the maximum occurrence
         for (int i = 0; i < 127; i++) {
-            if (max < arr[i]) {
-                max = arr[i];
-                // The maximum occurrence max is updated to 3 when it reaches arr[97] and arr[105]
+            if (max < arr[i]) {     //  -1 < 3   in case 'a'
+                max = arr[i];       //   max = 3
+                // The maximum occurrence max is updated to 3 because of char 'a' and 'i'
 
             }
         }
@@ -29,9 +32,9 @@ public class MaximumOccurrence {
 
         // Collect all characters with the maximum occurrence
         for (int i = 0; i < 127; i++) {
-            if (arr[i] == max) {
+            if (arr[i] == max) {                       // 'a' == 3
                 maxChars.add((char) i);
-                // When it finds arr[97]  == 3, it adds 'a' to maxChars           97 = 'a'
+//                When it finds arr[97]  == 3, it adds 'a' to maxChars           97 = 'a'
             }
         }
 

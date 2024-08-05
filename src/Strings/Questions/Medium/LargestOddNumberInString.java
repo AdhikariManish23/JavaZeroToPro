@@ -8,9 +8,9 @@ public class LargestOddNumberInString {
 
         int l = s.length();
         for (int i = l - 1; i >= 0; i--) {
-            int num = s.charAt(i) - '0';
+            int num = s.charAt(i) - '0';  // CONVERT
  /*
-    To Convert the Char into num subtract any char from char 0 ('0');. Because of ASCII values
+    To CONVERT the Char into num subtract any char from char 0 ('0');. Because of ASCII values
     '0' = 48 and you subtract any char value of number for example let take '5' = 53 .
     When you Subtract 53 - 48 you will get 5 in numeric form.
    */

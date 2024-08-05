@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class LongestCommonPrefix {
 
     public static String solution (String[] str ){
-        Arrays.sort(str);
+        Arrays.sort(str); // Any common prefix found between the first and last strings will also be a common prefix for all other strings in between
         String s1 = str[0];
         String s2= str[str.length-1];
         int i = 0;
