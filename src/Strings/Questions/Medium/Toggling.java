@@ -1,6 +1,9 @@
 package Strings.Questions.Medium;
 import java.util.Scanner;
 
+
+
+
 // Question : Each Character in String converts Uppercase into Lower and vice versa
 
 public class Toggling {
