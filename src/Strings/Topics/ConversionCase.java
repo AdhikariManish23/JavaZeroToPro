@@ -24,6 +24,9 @@ public class ConversionCase {
         char[] c = s.toCharArray();
         System.out.println(c);
 
+        int g = 10;
+        double f = g;
+        System.out.println(f);
 
     }
 }
