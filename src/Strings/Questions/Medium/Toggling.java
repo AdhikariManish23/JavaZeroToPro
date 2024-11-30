@@ -43,7 +43,7 @@ public class Toggling {
 
         for(int i= 0; i< str.length(); i++){
         char ch  = str.charAt(i);
-
+//  The Character class in Java provides several static methods to work with characters (char) effectively
         if(Character.isUpperCase(ch)){
             str.setCharAt(i, Character.toLowerCase(ch));
         }

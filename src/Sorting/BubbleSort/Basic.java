@@ -8,10 +8,11 @@ public class Basic {
     static void bubbleSort(int [] arr){
         int n = arr.length;
 
-        for (int i= 0 ; i < n-1; i++){
+        for (int i= 0 ; i < n-1; i++){   // why n-1 ? because it takes n-1 round to be sorted. For Example : {4,9,1,7,8,3} so it takes n-1 round because 1 digit will automatically sorted
 
             //  For Optimized Code we need to check there is need to traverse all the i iterations or not if array is sorted only just 1 iteration of i is enough.
             boolean flag = false;  // means there is no Swapping
+
             for (int j = 0 ; j< n-i-1; j++){  // last i element are already at correct sorted position , so there is no need to check them
                 if(arr[j] > arr[j+1]){
 

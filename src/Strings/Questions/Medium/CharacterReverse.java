@@ -17,12 +17,16 @@ public class CharacterReverse {
                 sb.append(ch);     // if there is no space store in sb you can see in  example "am" is store in sb(stirng Builder) => Eg;  "am " ; now after "am" there is space now else condition will apply with "am";
             }
             else{
+            //    optimised
+           //     ans.append(sb.reverse()); // Reverse the word and append to result . phele yeah sb1 reverse hoga
+
                 sb.reverse();    // sb = "i"
                 ans += sb;       // ans = "i"
-                ans += " ";      // ans = "i "
-                //  two methods for empty the String Builder
-                sb = new StringBuilder("");   // sb = ""   (empty)
-                // sb.delete(0, sb.length());   another method for empty String
+                ans += " ";      // ans = "i "   ( adding space )
+                //  three methods for empty the String Builder
+                sb.setLength(0);
+                // sb = new StringBuilder("");
+                // sb.delete(0, sb.length());
 
                 // Now String Builder is empty
             }
