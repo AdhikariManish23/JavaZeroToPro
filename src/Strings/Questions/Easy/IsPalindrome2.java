@@ -21,7 +21,7 @@ public class IsPalindrome2 {
               start++;
           } else if (!Character.isLetterOrDigit(end)) {
               end--;
-          } else if (Character.isLowerCase(start) != Character.isLowerCase(end)) {
+          } else if (Character.toLowerCase(first) != Character.toLowerCase(last)) {
               return  false;
           }
           start++;

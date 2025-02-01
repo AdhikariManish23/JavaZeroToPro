@@ -8,24 +8,20 @@ public class MaximumOccurrence {
     public static void main(String[] args) {
         String s = "anish adhikari";
 
-        int[] arr = new int[127];
+        int[] arr = new int[128];
 
         for (int i = 0; i < s.length(); i++) {
-            arr[s.charAt(i)] = arr[s.charAt(i)] + 1;
-    //              arr[97] = 0 + 1                       ASCII value of 'a' = 97
-    //              arr[97] = 3
+            if (s.charAt(i) != ' ') {
+                arr[s.charAt(i)]++;            // More flexible; works with any ASCII input.
+            }
         }
     //  After the above loop traversing arr[0,0,0,0,...,3,1,2,3,...,0,0,0]
 
         int max = -1;
 
         // Find the maximum occurrence
-        for (int i = 0; i < 127; i++) {
-            if (max < arr[i]) {     //  -1 < 3   in case 'a'
-                max = arr[i];       //   max = 3
-                // The maximum occurrence max is updated to 3 because of char 'a' and 'i'
-
-            }
+        for (int i = 0; i < 128; i++) {
+            max = Math.max(max, arr[i]);
         }
 
         List<Character> maxChars = new ArrayList<>();

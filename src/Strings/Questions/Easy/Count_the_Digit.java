@@ -5,7 +5,7 @@ public class Count_the_Digit {
     public static void main(String[] args) {
         int i  = 15694;
 //  I Method:
-        String s = ""+i;
+        String s = ""+i; // converted into string
         System.out.println(s.length());
 
 //  II Method:

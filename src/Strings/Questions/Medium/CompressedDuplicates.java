@@ -9,7 +9,7 @@ public class CompressedDuplicates {
 
     public static void main(String[] args) {
         String str = "aaabbbbcdddeeeee";
-        String ans = ""+ str.charAt(0);  // Without adding "" you can't add character in String
+        String  ans = ""+ str.charAt(0);  // Without adding "" you can't convert character into String
         int count = 1;   // Beacuse we already Start with the character
         for(int i = 1; i< str.length(); i++){
             char curr = str.charAt(i);    // 1 index (a)
@@ -19,9 +19,9 @@ public class CompressedDuplicates {
                 count++;    // count 2
             }
             else{
-//      if condition for when characater value is more than 1 than print the count otherwise print only character
+//          if condition for when characater value is more than 1 than print the count otherwise print only character
                 if(count>1) ans += count;
-//      reseting the count for the next character
+//          reseting the count for the next character.
                 count = 1;
                 ans += curr;
             }
