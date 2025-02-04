@@ -1,7 +1,7 @@
 package OOPs.Abstraction.Interface;
 
 interface I1 {
-    // 1. here we can use void/public/abstract
+    // 1. here we can use void/public/abstract/private
     void show();
 /*
    2. by using "default" key word we can create concrete method.
@@ -12,7 +12,7 @@ interface I1 {
 
    3. Samne with static we can create concrete method
       static void display(){
-      sop
+
    }
 
    4.  int a = 10;  we can create variable

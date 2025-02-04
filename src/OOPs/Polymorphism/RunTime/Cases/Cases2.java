@@ -1,7 +1,7 @@
 package OOPs.Polymorphism.RunTime.Cases;
 
 // Question => What happen if we change the Access Modifiers in the parent and child class
-// ans : You have to give More privelege access modifiers to the child class compaer to the Type1 Class
+// ans : You have to give More privelege access modifiers to the child class
 
 
 public class Cases2 {

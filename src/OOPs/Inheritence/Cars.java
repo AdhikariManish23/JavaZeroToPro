@@ -22,7 +22,6 @@ class bikes extends Cars
         alto.speed();
         System.out.println("Bike Speed :");
         bikes KTM = new bikes();
-
         KTM.speed();
     }
 }
